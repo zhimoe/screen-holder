@@ -1,6 +1,7 @@
 __version__ = '0.1.0'
 """
 # config 为了控制打包体积，必须创建python虚拟环境
+pip3 install pipenv
 pipenv shell
 pipenv install psutil pyautogui pynput pyinstaller
 

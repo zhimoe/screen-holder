@@ -1,6 +1,6 @@
 # screen-holder
 
-python script that auto move mouse and click to hold the win screen
+python script that auto move mouse and click to hold the windows screen
 
 脚本在每天晚上9点后开始定时检测是否有鼠标和键盘操作，如果没有，则移动鼠标并触发右键，避免自动关机
 
