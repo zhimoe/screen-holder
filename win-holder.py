@@ -5,10 +5,10 @@ pipenv shell
 pipenv install psutil pyautogui pynput pyinstaller
 
 # build in pipenv shell -w 隐藏控制台 -F 打包成一个exe，会有两个process
-pyinstaller.exe -Fw --icon=icon.ico --hidden-import "pynput.keyboard._win32" --hidden-import "pynput.mouse._win32" ./win-holder.py
+pyinstaller.exe -Fw --icon=icon.ico --hidden-import "pynput.keyboard._win32" --hidden-import "pynput.mouse._win32" ./screen-holder.py
 
 # process name
-win-holder.exe
+holder.exe
 
 """
 import pyautogui, time, datetime as dt, os, psutil, random
@@ -16,7 +16,7 @@ from pynput import keyboard, mouse
 
 STARTUP_TIME = dt.datetime.now()
 pyautogui.FAILSAFE = False
-PROC_NAME = 'win-holder.exe'
+PROC_NAME = 'holder.exe'
 keybord_mouse_triggered_latest_time = 0.0  # 最近一次键盘触发时间
 detect_interval_seconds = 59
 
